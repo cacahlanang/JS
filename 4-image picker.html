@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+	<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("list").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Apakah yakin ini pilihan anda?");
+	}
+</script>
+</head>
+<body style="background-size: cover; margin: 150px" background="https://images5.alphacoders.com/449/thumb-1920-449483.jpg">
+	<center><h1 style="background-color: white">WELCOME TO THE JUNGLE</h1></center>
+	<center>
+		<fieldset style="background-color: black">
+		<select onchange="gantigambar();" id="list">
+			<option>Pilih Hewan Anda</option>
+			<option value="https://cdn.idntimes.com/content-images/community/2020/02/green-anaconda-size-6d2f4460230f034fd130bcd31e5b02b3.jpg">Anaconda</option>
+			<option value="https://cdn.idntimes.com/content-images/community/2020/02/jaguar-8-650x425-49c4d061a40b6e966809136cae48dbd9.jpg">Jaguar</option>
+			<option value="https://cdn.idntimes.com/content-images/community/2020/02/photo-1523295214680-912fb486ddd4-2ce15beab20ff8be5231dc0ca00b2158.jpeg">Buaya</option>
+			<option value="https://cdn.idntimes.com/content-images/community/2020/02/methode-times-prod-web-bin-8985aab6-3005-11ea-83aa-e8f0eae9d133-456c2eabc9b00081d13a9213914932fe.jpg">Hiu Putih Besar</option>
+			<option value="https://cdn.idntimes.com/content-images/community/2020/02/lion-big-cat-predator-safari-46795-6bd9ae97a3f74d9e3abaf4c49386db1c.jpeg">Singa</option>
+		</select>
+	</fieldset>
+	</center>
+	<br>
+	<center><img src="https://i.pinimg.com/originals/58/5a/32/585a322d7fe8579f2c49570de25a760f.png" style="width: 350px;" id="gambar"></center>
+</body>
+</html>

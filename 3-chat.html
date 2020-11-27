@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    
+</head>
+<body background="https://webneel.com/wallpaper/sites/default/files/images/07-2014/2-black-wallpaper.jpg" style="background-size: cover;"> 
+    <center>
+	<h1 style="color: white;">CHAT</h1>
+	<div style="width: 100%; color: white;" id="isichat">
+    </div>
+	<form method="REQUEST" onsubmit="return kirim();" style="color: white;">
+		<input id="pesan" style="width: 50%" type="text" name="pesan">
+		<button type="submit" onclick="return kirim();">KIRIM PESAN</button>
+	</form>
+</center>	
+</body>
+<script type="text/javascript">
+	function kirim() {
+		let pesan = document.getElementById("pesan").value;
+		document.getElementById("isichat").innerHTML += pesan+"<br/>";
+		document.getElementById("pesan").value = "";
+		return false;
+    }
+</script>
+</html>

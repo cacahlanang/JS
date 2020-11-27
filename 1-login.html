@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LOGIN</title>
+</head>
+<body background="https://i2.wp.com/wallur.com/wp-content/uploads/2016/12/hacker-background-12.jpg?fit=1920%2C1080" style="margin: 200px">
+
+	<center>
+		<form method="REQUEST" style="color: honeydew;">
+			Username :<br/>
+			<br>
+			<input type="text" placeholder="username" id="username" name="username"><br/>
+			<br>
+			Password<br/>
+			<br>
+			<input type="password"  placeholder="password" id="password" name="password"><br/>
+			<br>
+			<button type="submit" onclick="return login()">SUBMIT</button>
+		</form>
+	</center>
+
+</body>
+<script type="text/javascript">
+	function login() {
+		username = document.getElementById("username").value;
+		password = document.getElementById("password").value;
+
+		if (username == "" || password == "") {
+			alert("Username / Password Tidak Boleh Kosong");
+			return false;
+		}
+		else if (password.length < 6) {
+			alert("Password Kurang dari 6");
+			return false;
+		}
+		else if (username == "caca ganteng" && password == "1234567") {
+			window.location = "chat.html";
+			return false;
+		}else{
+			alert("Username / Password anda salah");
+		}
+	}
+</script>
+</html>
